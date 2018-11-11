@@ -30,7 +30,7 @@ alias lclear="clear"
 alias tmux "tmux -2 u $argv"
 
 # path setups
-export GOROOT="/usr/local/go"
+export GOROOT="/usr/lib/go"
 export GOPATH="$HOME/go"
 export PATH="$GOPATH/bin:$GOROOT/bin:$PATH"
 export TERM="xterm-256color"
