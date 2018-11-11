@@ -37,10 +37,10 @@ export TERM="xterm-256color"
 export PATH="/home/daksh/anaconda3/bin:$PATH"
 
 # The next line updates PATH for the Google Cloud SDK.
-if [ -f '/home/daksh/google-cloud-sdk/path.bash.inc' ]; then source '/home/daksh/google-cloud-sdk/path.bash.inc'; fi
+if [ -f '/home/daksh/google-cloud-sdk/path.zsh.inc' ]; then source '/home/daksh/google-cloud-sdk/path.zsh.inc'; fi
 
 # The next line enables shell command completion for gcloud.
-if [ -f '/home/daksh/google-cloud-sdk/completion.bash.inc' ]; then source '/home/daksh/google-cloud-sdk/completion.bash.inc'; fi
+if [ -f '/home/daksh/google-cloud-sdk/completion.zsh.inc' ]; then source '/home/daksh/google-cloud-sdk/completion.zsh.inc'; fi
 
 autoload -Uz promptinit
 promptinit
