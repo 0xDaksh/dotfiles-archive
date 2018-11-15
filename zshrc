@@ -5,7 +5,7 @@ fi
 
 
 # language
-export LANG=en_US
+export LANG=en_US.utf-8
 neofetch | lolcat
 
 # microk8s
@@ -40,6 +40,12 @@ export GOPATH="$HOME/go"
 export PATH="$GOPATH/bin:$GOROOT/bin:$PATH"
 export TERM="xterm-256color"
 export PATH="/home/daksh/anaconda3/bin:$PATH"
+
+# nvm
+[ -z "$NVM_DIR" ] && export NVM_DIR="$HOME/.nvm"
+source /usr/share/nvm/nvm.sh
+source /usr/share/nvm/bash_completion
+source /usr/share/nvm/install-nvm-exec
 
 # The next line updates PATH for the Google Cloud SDK.
 if [ -f '/home/daksh/google-cloud-sdk/path.zsh.inc' ]; then source '/home/daksh/google-cloud-sdk/path.zsh.inc'; fi
