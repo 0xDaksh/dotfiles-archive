@@ -52,7 +52,3 @@ if [ -f '/home/daksh/google-cloud-sdk/path.zsh.inc' ]; then source '/home/daksh/
 
 # The next line enables shell command completion for gcloud.
 if [ -f '/home/daksh/google-cloud-sdk/completion.zsh.inc' ]; then source '/home/daksh/google-cloud-sdk/completion.zsh.inc'; fi
-
-autoload -Uz promptinit
-promptinit
-prompt steeef
