@@ -22,7 +22,6 @@ set encoding=UTF-8
 " Utility / Productivity
 Plug 'scrooloose/nerdtree' 
 Plug 'ryanoasis/vim-devicons'
-Plug 'majutsushi/tagbar'
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'zchee/deoplete-go', { 'do': 'make'}
 Plug 'alvan/vim-closetag'
@@ -74,10 +73,6 @@ set expandtab
 " Relative Number Pane
 set number
 set relativenumber
-
-" TagBar
-let g:tagbar_width = 30
-let g:tagbar_iconchars = ['↠', '↡']
 
 " TMUX fix
 if &term =~ '256color'
