@@ -6,7 +6,7 @@ fi
 
 # language
 export LANG=en_US.utf-8
-neofetch | lolcat
+neofetch
 
 # microk8s
 alias mkcl="microk8s.kubectl"

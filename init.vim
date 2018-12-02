@@ -14,6 +14,8 @@ Plug 'sjl/badwolf'
 Plug 'lifepillar/vim-solarized8'
 Plug 'ErichDonGubler/vim-sublime-monokai'
 Plug 'felipesousa/rupza'
+Plug 'mhartington/oceanic-next'
+Plug 'morhetz/gruvbox'
 
 " Icons on NerdTree
 Plug 'ryanoasis/vim-devicons'
@@ -31,6 +33,10 @@ Plug 'tpope/vim-sensible'
 Plug 'tpope/vim-fugitive'
 Plug 'jiangmiao/auto-pairs'
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
+
+" HTML Completions
+Plug 'mattn/emmet-vim'
+
 
 " Rainbow Parenthesis
 Plug 'junegunn/rainbow_parentheses.vim'
@@ -56,9 +62,10 @@ if (has("termguicolors"))
  set termguicolors
 endif
 
-let g:airline_theme='powerlineish'
+let g:airline_theme='base16_oceanicnext'
+let g:airline_powerline_fonts = 1
 set background=dark
-colorscheme solarized8 
+colorscheme OceanicNext
 
 " Deoplete Setup
 let g:deoplete#enable_at_startup = 1
