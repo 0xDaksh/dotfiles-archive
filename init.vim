@@ -10,12 +10,7 @@ Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 
 " ColorSchemes
-Plug 'sjl/badwolf'
-Plug 'lifepillar/vim-solarized8'
-Plug 'ErichDonGubler/vim-sublime-monokai'
-Plug 'felipesousa/rupza'
 Plug 'mhartington/oceanic-next'
-Plug 'morhetz/gruvbox'
 
 " Icons on NerdTree
 Plug 'ryanoasis/vim-devicons'
@@ -23,7 +18,6 @@ set encoding=UTF-8
 
 " Utility / Productivity
 Plug 'scrooloose/nerdtree' 
-Plug 'ryanoasis/vim-devicons'
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'zchee/deoplete-go', { 'do': 'make'}
 Plug 'alvan/vim-closetag'
@@ -33,15 +27,16 @@ Plug 'tpope/vim-sensible'
 Plug 'tpope/vim-fugitive'
 Plug 'jiangmiao/auto-pairs'
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
+Plug 'scrooloose/syntastic'
 
 " HTML Completions
 Plug 'mattn/emmet-vim'
-
 
 " Rainbow Parenthesis
 Plug 'junegunn/rainbow_parentheses.vim'
 let g:rainbow_active = 1
 autocmd VimEnter * RainbowParentheses 
+
 " Autocomplete
 Plug 'zchee/deoplete-jedi'
 
@@ -99,3 +94,14 @@ map <C-l> :tabn<CR>
 
 " Yank-It-All
 map <C-a> :%y+<CR>
+
+" Format with GoImports
+let g:go_fmt_command = "goimports"
+
+" Deoplete use vim-go
+let g:deoplete#sources#go = 'vim-go'
+
+" Syntastic
+let g:syntastic_check_on_wq = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_go_checkers = ['go', 'golint', 'govet', 'errcheck']

@@ -29,8 +29,13 @@ alias vi="nvim"
 alias vim="nvim"
 
 # just some terminal aliases
-alias LS="ls"
-alias l="ls -la"
+#alias LS="ls"
+#alias l="ls -la"
+alias ls='lsd'
+alias l='ls -l'
+alias la='lsd -a'
+alias lla='ls -la'
+alias lt='ls --tree'
 alias lclear="clear"
 alias tmux "tmux -2 u $argv"
 
@@ -52,3 +57,6 @@ if [ -f '/home/daksh/google-cloud-sdk/path.zsh.inc' ]; then source '/home/daksh/
 
 # The next line enables shell command completion for gcloud.
 if [ -f '/home/daksh/google-cloud-sdk/completion.zsh.inc' ]; then source '/home/daksh/google-cloud-sdk/completion.zsh.inc'; fi
+
+export PATH="$HOME/.cargo/bin:$PATH"
+
