@@ -23,19 +23,16 @@ alias grao="git remote add origin"
 alias grro="git remote remove origin"
 alias gdf="git diff"
 alias gsu="git status"
+alias gpo="git push origin"
 alias kctl="kubectl"
+
 # VIM ALIAS
 alias vi="nvim"
 alias vim="nvim"
 
 # just some terminal aliases
-#alias LS="ls"
-#alias l="ls -la"
-alias ls='lsd'
-alias l='ls -l'
-alias la='lsd -a'
-alias lla='ls -la'
-alias lt='ls --tree'
+alias LS="ls"
+alias ltunnel="~/.nvm/versions/node/v10.8.0/bin/lt"
 alias lclear="clear"
 alias tmux "tmux -2 u $argv"
 
@@ -59,4 +56,4 @@ if [ -f '/home/daksh/google-cloud-sdk/path.zsh.inc' ]; then source '/home/daksh/
 if [ -f '/home/daksh/google-cloud-sdk/completion.zsh.inc' ]; then source '/home/daksh/google-cloud-sdk/completion.zsh.inc'; fi
 
 export PATH="$HOME/.cargo/bin:$PATH"
-
+export ANDROID_HOME="$HOME/Android/Sdk"
