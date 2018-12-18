@@ -51,4 +51,4 @@ if [ -f '/home/daksh/google-cloud-sdk/path.zsh.inc' ]; then source '/home/daksh/
 if [ -f '/home/daksh/google-cloud-sdk/completion.zsh.inc' ]; then source '/home/daksh/google-cloud-sdk/completion.zsh.inc'; fi
 
 export PATH="$HOME/.cargo/bin:$PATH"
-export ANDROID_HOME="$HOME/Android/Sdk"
+
