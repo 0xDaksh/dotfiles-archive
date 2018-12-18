@@ -8,11 +8,6 @@ fi
 export LANG=en_US.utf-8
 neofetch
 
-# microk8s
-alias mkcl="microk8s.kubectl"
-alias mkcl-start="snap enable microk8s"
-alias mkcl-stop="snap disable microk8s"
-
 # GIT ALIASES
 alias gc="git clone"
 alias ga="git add"
